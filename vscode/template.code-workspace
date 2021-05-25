@@ -1,0 +1,60 @@
+{
+    "folders": [
+        {
+            "path": ".."
+        }
+    ],
+    "settings": {
+        "window.title": "workspace-name",
+        "autoDocstring.docstringFormat": "numpy",
+        "debug.allowBreakpointsEverywhere": true,
+        "debug.showBreakpointsInOverviewRuler": true,
+        "editor.cursorStyle": "line",
+        "editor.cursorWidth": 2,
+        "editor.fontSize": 15.5,
+        "editor.fontWeight": "500",
+        "editor.formatOnSave": true,
+        "editor.wordWrap": "wordWrapColumn",
+        "editor.wordWrapColumn": 88,
+        "editor.wrappingIndent": "deepIndent",
+        "files.autoSave": "afterDelay",
+        "files.autoSaveDelay": 1000,
+        "files.exclude": {
+            "**/.DS_Store": true,
+            "**/.direnv": false,
+            "**/.git": true,
+            "**/.hg": true,
+            "**/.mypy_cache": true,
+            "**/.svn": true,
+            "**/.venv": false,
+            "**/CVS": true,
+            "**/.cache": true,
+            "**/.pytest_cache": true,
+        },
+        "jupyter.jupyterServerType": "local",
+        "python.formatting.blackPath": ".venv/bin/black",
+        "python.formatting.provider": "black",
+        "python.linting.banditEnabled": true,
+        "python.linting.enabled": true,
+        "python.linting.flake8Args": [
+            "--max-line-length=88"
+        ],
+        "python.linting.flake8Enabled": true,
+        "python.linting.mypyEnabled": true,
+        "python.linting.pylintEnabled": true,
+        "python.pythonPath": ".venv/bin/python",
+        "rewrap.reformat": true,
+        "window.autoDetectColorScheme": true,
+        "workbench.action.moveEditorToNextGroup": "Ctrl+Shift+",
+        "workbench.colorCustomizations": {
+            "editorIndentGuide.activeBackground": "#ff0000",
+            // "editorIndentGuide.background": "#ffffff",
+            // "editorCursor.foreground": "#ffffff",
+            "tree.indentGuidesStroke": "#ff0000"
+        },
+        "workbench.colorTheme": "Bluloco Light Italic",
+        "workbench.preferredDarkColorTheme": "Monokai",
+        "workbench.preferredLightColorTheme": "Bluloco Light Italic",
+        "workbench.tree.renderIndentGuides": "always"
+    }
+}

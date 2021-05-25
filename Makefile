@@ -13,7 +13,11 @@ install-extensions:
 
 
 setup-vscode:
-	cp ./vscode ../.vscode
+	cp ./vscode ../.vsscode
+	
+	# remove for now; in the future, move to correct folder to apply appl user settings
+	rm -f ../.vscode/win-settings.json.txt
+	
 
 setup-bash:
 	cp ./bash/.bashrc ./test

@@ -1,0 +1,54 @@
+// Move to /C:/Users/<user_id>/AppData/Roaming/Code/User/settings.json
+{
+    "remote.SSH.remotePlatform": {
+        "rosalind.gene.com": "linux"
+    },
+    "workbench.preferredDarkColorTheme": "Monokai",
+    "workbench.preferredLightColorTheme": "Bluloco Light Italic",
+    "workbench.colorTheme": "Bluloco Light Italic",
+    "editor.fontWeight": "500",
+    "editor.wordWrap": "wordWrapColumn",
+    "editor.wordWrapColumn": 500,
+    "debug.allowBreakpointsEverywhere": true,
+    "debug.showBreakpointsInOverviewRuler": true,
+    "workbench.colorCustomizations": {},
+    "window.autoDetectColorScheme": true,
+    "workbench.sideBar.location": "left",
+    "editor.fontSize": 15,
+    "python.formatting.blackPath": "/gstore/home/cuiw7/.local/lib/python3.7/site-packages/black",
+    "workbench.editorAssociations": [
+        {
+            "viewType": "jupyter.notebook.ipynb",
+            "filenamePattern": "*.ipynb"
+        }
+    ],
+    "jupyter.askForKernelRestart": false,
+    "python.linting.banditEnabled": true,
+    "terminal.integrated.profiles.linux": {
+        "bash (login)": {
+            "path": "bash",
+            "args": [
+                "-l"
+            ]
+        },
+        "bash": {
+            "path": "bash"
+        },
+        "zsh": {
+            "path": "zsh"
+        },
+        "fish": {
+            "path": "fish"
+        },
+        "tmux": {
+            "path": "tmux",
+            "icon": "terminal-tmux"
+        },
+        "pwsh": {
+            "path": "pwsh",
+            "icon": "terminal-powershell"
+        },
+    },
+    "terminal.integrated.defaultProfile.linux": "bash (login)",
+    "terminal.integrated.defaultProfile.windows": "bash (login)"
+}

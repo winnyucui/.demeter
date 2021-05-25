@@ -1,0 +1,11 @@
+formulahendry.docker-explorer
+lextudio.restructuredtext
+mhutchie.git-graph
+ms-python.python
+ms-python.vscode-pylance
+ms-toolsai.jupyter
+njpwerner.autodocstring
+njqdev.vscode-python-typehint
+richie5um2.vscode-sort-json
+ritwickdey.LiveServer
+tamasfe.even-better-toml

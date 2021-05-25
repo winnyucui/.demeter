@@ -9,7 +9,7 @@ install-demeter:
 	git clone https://github.com/winn-cui/.vscode.git
 
 setup-vscode:
-	cp ./vscode ../.vsscode
+	cp -r ./vscode ../.vscode
 	cd ../.vscode; make install-extensions
 	
 setup-bash:

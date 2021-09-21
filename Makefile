@@ -15,6 +15,9 @@ setup-vscode:
 setup-bash:
 	cp ./bash/.bashrc ./test
 
+setup-karabiner:
+	cp ./karabiner/karabiner.json ../.config/karabiner
+
 setup-fish:
 setup-pyenv:
 setup-git:

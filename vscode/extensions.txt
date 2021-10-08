@@ -9,3 +9,5 @@ njqdev.vscode-python-typehint
 richie5um2.vscode-sort-json
 ritwickdey.LiveServer
 tamasfe.even-better-toml
+github.codespaces
+ms-vscode-remote.vscode-remote-extensionpack

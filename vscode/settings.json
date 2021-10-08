@@ -45,7 +45,7 @@
         // "editorCursor.foreground": "#ffffff",
         "tree.indentGuidesStroke": "#ff0000"
     },
-    "workbench.colorTheme": "Bluloco Light Italic",
+    // "workbench.colorTheme": "Bluloco Light Italic",
     "workbench.preferredDarkColorTheme": "Monokai",
     "workbench.preferredLightColorTheme": "Bluloco Light Italic",
     "workbench.tree.renderIndentGuides": "always"

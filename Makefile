@@ -8,6 +8,15 @@ error:
 install-demeter:
 	git clone https://github.com/winn-cui/.vscode.git
 
+# for mac
+install-vscode:
+	cd ~/Downloads
+	curl "https://code.visualstudio.com/sha/download?build=stable&os=darwin-universal" -OJL
+	unzip VSCode-darwin-universal.zip
+	mv "Visual Studio Code.app" ~/Applications
+	cd ~/Applications
+	open "Visual Studio Code.app"
+
 setup-vscode:
 	cp -r ./vscode ../.vscode
 	cd ../.vscode; make install-extensions

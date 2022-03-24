@@ -10,22 +10,25 @@ install-demeter:
 
 # for mac
 install-vscode:
-	cd ~/Downloads
-	curl "https://code.visualstudio.com/sha/download?build=stable&os=darwin-universal" -OJL
-	unzip VSCode-darwin-universal.zip
-	mv "Visual Studio Code.app" ~/Applications
-	cd ~/Applications
-	open "Visual Studio Code.app"
+	curl -OJL "https://code.visualstudio.com/sha/download?build=stable&os=darwin-universal" --output-dir "~/Downloads"
+	unzip "~/Downloads/VSCode-darwin-universal.zip"
+	rm -rf "~/Downloads/VSCode-darwin-universal.zip"
+	mv "~/Downloads/Visual Studio Code.app" "~/Applications"
+	open "~/Applications/Visual Studio Code.app"
 
+# for mac
 setup-vscode:
+	if [ ! -f "/Users/${USER}/Applications/Visual Studio Code.app/Contents/Resources/app/bin/code" ]; then\
+		ln -s "/Users/${USER}/Applications/Visual Studio Code.app/Contents/Resources/app/bin/code" "/usr/local/bin/";\
+	fi
 	mkdir -p ~/.vscode
 	cp ./vscode/extensions.txt ~/.vscode
 	cp ./vscode/Makefile ~/.vscode
-	cp ./vscode/settings.json ~/.vscode
+	cp "./vscode/settings.json" "~/Library/Application Support/Code/User/"
 	cp ./vscode/template.code-workspace ~/.vscode
 	cp ./vscode/keybindings.json ~/Library/Application\ Support/Code/User
 	cd ~/.vscode; make install-extensions
-	
+
 setup-bash:
 	cp ./bash/.bashrc ./test
 

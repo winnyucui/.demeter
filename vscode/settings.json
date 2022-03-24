@@ -4,7 +4,7 @@
     "debug.showBreakpointsInOverviewRuler": true,
     "editor.cursorStyle": "line",
     "editor.cursorWidth": 2,
-    "editor.fontSize": 15.5,
+    "editor.fontSize": 12.5,
     "editor.fontWeight": "500",
     "editor.formatOnSave": true,
     "editor.wordWrap": "wordWrapColumn",
@@ -48,5 +48,9 @@
     // "workbench.colorTheme": "Bluloco Light Italic",
     "workbench.preferredDarkColorTheme": "Monokai",
     "workbench.preferredLightColorTheme": "Bluloco Light Italic",
-    "workbench.tree.renderIndentGuides": "always"
+    "workbench.tree.renderIndentGuides": "always",
+    "workbench.colorTheme": "Bluloco Light Italic",
+    "workbench.sideBar.location": "left",
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue"
 }

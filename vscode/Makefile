@@ -6,7 +6,7 @@ error:
 	@exit 2
 
 freeze-extensions:
-	code --list-extensions > extensions.txt
+	code --list-extensions --show-versions > extensions.txt
 
 install-extensions:
 	cat extensions.txt | xargs -L 1 -I _ code --install-extension _ --force

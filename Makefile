@@ -18,11 +18,19 @@ install-vscode:
 	open "Visual Studio Code.app"
 
 setup-vscode:
-	cp -r ./vscode ../.vscode
-	cd ../.vscode; make install-extensions
+	mkdir -p ~/.vscode
+	cp ./vscode/extensions.txt ~/.vscode
+	cp ./vscode/Makefile ~/.vscode
+	cp ./vscode/settings.json ~/.vscode
+	cp ./vscode/template.code-workspace ~/.vscode
+	cp ./vscode/keybindings.json ~/Library/Application\ Support/Code/User
+	cd ~/.vscode; make install-extensions
 	
 setup-bash:
 	cp ./bash/.bashrc ./test
+
+setup-karabiner:
+	cp ./karabiner/karabiner.json ../.config/karabiner
 
 setup-fish:
 setup-pyenv:

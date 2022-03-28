@@ -13,9 +13,9 @@ install-vscode:
 	curl -OJL "https://code.visualstudio.com/sha/download?build=stable&os=darwin-universal" --output-dir "~/Downloads"
 	unzip "~/Downloads/VSCode-darwin-universal.zip"
 	rm -rf "~/Downloads/VSCode-darwin-universal.zip"
-	mv "~/Downloads/Visual Studio Code.app" "~/Applications"
-	open "~/Applications/Visual Studio Code.app"
-
+	mv "~/Downloads/Visual Studio Code.app" "/Applications"
+	open "/Applications/Visual Studio Code.app"
+	
 # for mac
 setup-vscode:
 	if [ ! -f "/Users/${USER}/Applications/Visual Studio Code.app/Contents/Resources/app/bin/code" ]; then\
@@ -31,6 +31,11 @@ setup-vscode:
 
 setup-bash:
 	cp ./bash/.bashrc ./test
+
+install-karabiner:
+	curl -OJL "https://github.com/pqrs-org/Karabiner-Elements/releases/download/v14.4.0/Karabiner-Elements-14.4.0.dmg" --output-dir "~/Downloads"
+	open "~/Downloads/Karabiner-Elements*.dmg"
+	open "/Applications/Karabiner-Elements.app"
 
 setup-karabiner:
 	cp ./karabiner/karabiner.json ../.config/karabiner

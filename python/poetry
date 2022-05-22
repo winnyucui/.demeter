@@ -1,0 +1,20 @@
+
+
+
+# download poetry
+curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | python -
+
+# enable tab completion for fish
+poetry completions fish > ~/.config/fish/completions/poetry.fish
+
+# add poetry path to fish configs
+# run from command line
+fish_add_path ~/.poetry/bin 
+
+
+# fix slow package dependency resolving
+? https://github.com/python-poetry/poetry/issues/2094#issuecomment-1106447343
+
+
+Sources:
+https://python-poetry.org/docs/

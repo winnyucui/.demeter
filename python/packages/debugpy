@@ -1,0 +1,15 @@
+
+
+
+python -m debugpy --listen 5678 --wait-for-client <python_script_to_execute> <flags, parameters, arguments, etc...>
+
+
+Examples:
+
+GRAIL
+python -m debugpy --listen 5678 --wait-for-client <python_script_to_execute> <flags, parameters, arguments, etc...>
+
+
+
+Genentech
+python -m debugpy --listen 5678 --wait-for-client src/dsidm_engine/workflows/pipelines/valicert/s2_conformance/exec.py --wf-type bodi_valicert --test scenario_0 --env-path "/gstore/home/cuiw7/dsidm-engine/tests/workflows/pipelines/valicert/_flavors/bodi_valicert/configs/.env" --creds-path "/gstore/home/cuiw7/dsidm-engine/tests/workflows/pipelines/valicert/_flavors/bodi_valicert/configs/.creds"
